@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetSheffDemToilets</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <script defer src="./app.js"></script>
+</head>
+<body>
+    <!-- -------------------------------------------------------------------------------- -->
+    <!-- Each element of the layout has a class, which corresponds to the styling in SCSS -->
+    <!--- * Look up BEM naming convention if they are unclear ------------------------------>
+    <!-- If elements have IDs, these are being used in app.js ------------------------------>
+    <!-- -------------------------------------------------------------------------------- -->
+
+    <!-- This section is the nav bar -->
+    <nav class="nav">
+        <!-- This "nav__links" div allows us to group the links together in the layout -->
+        <div class="nav__links">
+            <!-- anchor tags for links -->
+            <a href="">
+                <button class="nav__links--button">
+                    <!-- space for an icon or text -->
+                </button>
+            </a>
+            <a href="" class="nav__links--button">
+                <button>
+                    <!-- space for an icon or text -->
+                </button>
+            </a>
+            <a href="" class="nav__links--button">
+                <button>
+                    <!-- space for an icon or text -->
+                </button>
+            </a>
+        </div>
+    </nav>
+
+    <!-- This section is for your header image and page title -->
+    <header class="header">
+        <div class="header__image">
+            <img src="" alt="Header image - this must be descriptive">
+        </div>
+        <h1 class="header__title">
+            Page Title
+        </h1>
+    </header>
+
+    <!-- This section is where you describe your cause, what the problem is, etc -->
+    <main class="content">
+
+        <div class="content__summary">
+            <h2 class="content__summary--title">
+                Summary header
+            </h2>
+            <p class="content__summary--text">
+                <!-- space for text -->
+            </p>
+            <p class="content__summary--text">
+                <!-- space for text -->
+            </p>
+            <p class="content__summary--text">
+                <!-- space for text -->
+            </p>
+        </div>
+
+        <div class="content__image">
+            <!-- space for another image -->
+            <img src="" alt="Content image - this must be descriptive">
+        </div>
+    </main>
+
+    <!-- This section is for the fillable form, for signing the petition -->
+    <!-- functionality to be worked out -->
+    <section class="petition">
+        <form class="petition__form">
+            <p class="petition__form--callout">Please sign our petition</p>
+            <label for="name-input">Your full name</label>
+            <input type="text" class="petition__form--namebox" id="name-input">
+            <label for="email-input">Contact email</label>
+            <input type="email" class="petition__form--emailbox" id="email-input">
+            <button class="petition__form--submit">Sign</button>
+        </form>
+    </section>
+
+    <!-- This section can have some additional links, as well as site credits -->
+    <footer class="footer">
+        <div class="footer__links">
+            <!-- anchor tags for links. If hyperlinks make more sense, we can remove the buttons inside -->
+            <a href="" class="footer__links--button">
+                <button>
+                    <!-- space for an icon or text -->
+                </button>
+            </a>
+            <a href="" class="footer__links--button">
+                <button>
+                    <!-- space for an icon or text -->
+                </button>
+            </a>
+            <a href="" class="footer__links--button">
+                <button>
+                    <!-- space for an icon or text -->
+                </button>
+            </a>
+        </div>
+        <div class="footer__credits">
+            <a href="https://github.com/Githublearner22" class="footer__credits--link">
+                Site by Maieuran Santhanathan
+            </a>
+            <a href="https://github.com/CarapaceonBear" class="footer__credits--link">
+                Layout by Will Smith
+            </a>
+            <p class="footer__credits--text">
+                <!-- any additional text -->
+            </p>
+        </div>
+    </footer>
+    
+</body>
+</html>
