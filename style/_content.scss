@@ -1,2 +1,46 @@
 @use "./variables" as *;
 
+.content {
+    // spacing for the whole content section
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
+    // This is a placeholder value
+    height: 1000px;
+
+    &__summary {
+        // spacing for the text elements of this section
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        width: 70%;
+        height: 100%;
+        background-color: $primary-color;
+
+        &--title {
+            font-weight: $font-bold;
+            font-size: 32px;
+            // The title is spaced differently, to sit against the top left
+            margin: 0;
+            padding: 1rem 2rem;
+
+            background-color: $tertiary-color;
+        }
+        &--text {
+            margin: 0 2rem 3rem 2rem;
+            font-weight: $font-light;
+            font-size: 24px;
+        }
+    }
+    &__image {
+        // the background colour shouldn't be seen once the image is there
+        height: 600px;
+        width: 70%;
+        background-color: $tertiary-color;
+    }
+}
