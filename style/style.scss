@@ -1,0 +1,8 @@
+// You don't need to modify anything in this file,
+// it just combines all the SCSS together, ready to become CSS
+@use "./body";
+@use "./nav";
+@use "./header";
+@use "./content";
+@use "./petition";
+@use "./footer";

@@ -1,0 +1,25 @@
+// This is styling how the sections sit within the full page
+
+@use "./variables" as *;
+
+body {
+    // css reset
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    //
+
+    // flexbox is putting all the sections into one column, center-aligned
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    font-family: $primary-font;
+    background-color: $background-color;
+
+    width: 100vw;
+}

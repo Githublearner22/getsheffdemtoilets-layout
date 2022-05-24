@@ -1,0 +1,27 @@
+// This styling is for the header section
+// The numbers will need some tweaking when the image and text is there
+
+@use "./variables" as *;
+
+.header {
+    position: relative;
+    width: 100%;
+
+    &__image {
+        // the background colour shouldn't be seen once the image is there
+        height: 400px;
+        background-color: $primary-color;
+    }
+    &__title {
+        // The title is overlapping with the image
+        position: absolute;
+        bottom: 1rem;
+        right: 6rem;
+        // we're giving the title a background colour to make it readable against the image
+        padding: .5rem 1rem;
+        background-color: $secondary-color;
+        // font settings
+        font-size: 48px;
+        font-weight: $font-bold;
+    }
+}
