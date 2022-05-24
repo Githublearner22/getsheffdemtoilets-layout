@@ -19,6 +19,7 @@ body {
   width: 100%;
   height: 4rem;
   background-color: #FFD744;
+  padding-right: 4rem;
 }
 .nav__links {
   display: flex;
