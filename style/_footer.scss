@@ -1,2 +1,40 @@
 @use "./variables" as *;
 
+.footer {
+    width: 100%;
+    height: 6rem;
+    background-color: $tertiary-color;
+
+    &__links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        gap: 5px;
+    
+        &--button {
+            // the space between the buttons
+            margin-right: 1rem;
+            // placeholder styling, until we know what these links are like
+            height: 4rem;
+            width: 4rem;
+            border: none;
+            border-radius: 2rem;
+            background-color: $primary-color;
+        }
+    }
+    &__credits {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        background-color: $tertiary-color;
+
+        &--link {
+            text-decoration: none;
+            color: black;
+            margin-bottom: 8px;
+        }
+    }
+}
